@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Calculateur</title>
+</head>
+<body>
+    
+
+    <form id="formCalculator">
+
+        <!--Avant-->
+        <input type="text" id="avant" placeholder="Prix avant...(Satochi)">
+
+        <!--Après-->
+        <input type="text" id="apres" placeholder="Prix Après...(Satochi)">
+        
+        <!--Nombre de token-->
+        <input type="number" id="nbToken" placeholder="Nombre de token">
+
+        <!--Prix btc-->
+        <input type="text" id="btcPrice" placeholder="Prix Btc...($)">
+
+        <input type="submit" id="start" value="Calculate">
+
+
+    </form>
+    <div id="contResults">
+        
+        <!--Benefice net-->
+            <div>Benefice Brute: <span class="results" id="benef"></span></div>
+
+        <!--Benefice Après fees-->
+            <div>Benefice après fees: <span class="results" id="afterFees"></span></div>
+
+        <!--Fees-->
+            <div>Fees: <span class="results" id="fees"></span></div>
+            
+        
+    </div>
+
+
+
+<script src="libs/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
